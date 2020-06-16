@@ -74,4 +74,6 @@ h2 {
 p {
     margin-top: 20px;
     color: rgba(0, 0, 0, 0.6);
+    line-height: 2;
+    font-size: 14px;
 }
