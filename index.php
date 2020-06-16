@@ -23,17 +23,39 @@ $faqs = [
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>FAQs</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <?php
+        <header>
+            <div class="header_top">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google Logo">
+                <span>Privacy & Terms</span>
+            </div>
+            <div class="header_bot">
+                <a href="#"><span>Overview</span></a>
+                <a href="#"><span>Privacy Policy</span></a>
+                <a href="#"><span>Terms of Service</span></a>
+                <a href="#"><span>Technologies</span></a>
+                <a href="#" class="active"><span>FAQ</span></a>
+                <a href="#" id="myAccount">
+                    <img src="https://lh5.googleusercontent.com/-Yw9P_kkl5qI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckM4ThIMkDb1nLMHWWTynCUK0iWqg/il/photo.jpg" alt="">
+                    <span>andrearossi@gmail.com</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="container">
+            <?php
             foreach ($faqs as $key => $faq) {
-        ?>
+                ?>
                 <h2><?php echo $faq['titolo'] ?></h2>
                 <p><?php echo $faq['corpo'] ?></p>
-        <?php
+                <?php
             }
-        ?>
+            ?>
+        </div>
 
     </body>
 </html>
